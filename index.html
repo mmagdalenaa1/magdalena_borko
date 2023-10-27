@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Moja web stranica</title>
-<body>
-    <h1>Moja web stranica</h1>
+    <!-- <style>
+        h1 {
+            color: red;
+        }
+    </style> -->
 </body>
     <h1>Naslov 1</h1>
     <h2>Naslov 2</h2>
@@ -15,6 +19,11 @@
     <h6>Naslov 6</h6>
 <p>Ovo je neki tekst.</p>
 <!--Ovdje krece paragraf-->
+<p class="paragraf1"> Ovo je neki paragraf
+    ovo je prvi red
+    ovo je drugi red
+    ovo je treći red
+</p>
 <pre>
     ovo je prvi red
     ovo je drugi red
@@ -68,5 +77,164 @@
     <li>Zadaća</li>
     <li>Zadaća</li>
 </ol>
+<h3>Tablice u HTML-u</h3>
+<table border="1">
+<tr>
+    <td>1. red, ćelija 1</td>
+    <td>1. red, ćelija 2</td>
+</tr>
+<tr>
+    <td>2. red, ćelija 1</td>
+    <td>2. red, ćelija 2</td>
+</tr>
+<tr>
+    <td>3. red, ćelija 1</td>
+    <td>3. red, ćelija 2</td>
+</tr>  
+</table>
+<br>
+<hr>
+<br>
+<table border="1">
+    <caption>Tablica 1</caption>
+    <tr>
+        <th>1. red, ćelija 1</th>
+        <th>1. red, ćelija 2</th>
+    </tr>
+    <tr>
+        <td>2. red, ćelija 1</td>
+        <td>2. red, ćelija 2</td>
+    </tr>
+    <tr>
+        <td>3. red, ćelija 1</td>
+        <td>3. red, ćelija 2</td>
+    </tr>
+    </table>
 
+<br>
+<hr>
+<br>
+
+<table border="1">
+    <tr>
+        <th colspan="3">1. red, ćelija 1,2 i 3</th>
+    </tr>
+    <tr>
+        <td>2. red, ćelija 1.</td>
+        <td>2. red, ćelija 2</td>
+        <td>2. red, ćelija 3</td>
+    </tr>
+    <tr>
+        <td>3. red, ćelija 1</td>
+        <td colspan="2">3. red, ćelija 2 i 3</td>
+    </tr>
+</table>
+<br>
+<hr>
+<br>
+<table border="1">
+    <tr>
+        <th rowspan="3">1. red, ćelija 1</th>
+        <th>1. red, ćelija 2</th>
+        <th>1. red, ćelija 3</th>
+    </tr>
+    <tr>
+        <td rowspan="2">2. red, ćelija 2</td>
+        <td>2. red, ćelija 3</td>
+    </tr>
+    <tr>
+        <td>3. red, ćelija 3</td>
+    </tr>
+</table>
+<br>
+<hr>
+<br>
+<table border="1">
+    <caption>Raspored</caption>
+    <tr>
+        <th></th>
+        <th>9am</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12am</th>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td colspan="2">Geography</td>
+        <td>Math</td>
+        <td>Art</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td colspan="3">Gym</td>
+        <td>Home</td>
+    </tr>
+</table>
+<br>
+<hr>
+<br>
+<h3>Forme (obrasci) u HTML-u</h3>
+
+<form name="Obrazac 1" method="post" autocomplete="off" action="link1.html">
+    <p>
+        <label for="Ime">Ime i prezime:</label>
+        <input id="Ime" type="text" size="15" maxlength="15" placeholder="Unesi ime" required>
+        <br>
+        <br>
+        <label for="mail">E-mail adresa:</label>
+        <input type="email" name="email" id="mail" size="15">
+        <br>
+        <br>
+        <label for="pass">Vaša lozinka:</label>
+        <input type="password" name="password" id="pass" size="15" required> 
+        <br><br>
+        <label for="mob">Unesi broj mobitela:</label>
+        <input type="tel" name="mobitel" id="mob" maxlength="10" size="15" pattern="[0-9]{1,10}">
+        <br><br>
+        <label for="broj">Unesi brojeve:</label>
+        <input type="number" name="brojevi" id="broj" size="15">
+        <br><br>
+        <label for="color">Unesi boju</label>
+        <input type="color" name="boje" id="color">
+        <br><br>
+        <p>Izaberi programski jezik:</p>
+        <input type="radio" name="language" id="html" value="HTML">
+        <label for="html">HTML</label> <br>
+        <input type="radio" name="language" id="CSS" value="CSS">
+        <label for="CSS">CSS</label> <br>
+        <input type="radio" name="language" id="JS" value="JS">
+        <label for="JS">JavaScript</label> <br>
+        <br><br>
+        <input type="submit" value="Pošalji">    
+        <input type="reset" value="Poništi">
+     </p>
+<hr>
+<br>
+<h3>HTML form</h3>
+<p>
+    <label for="Name">First name:</label>
+    <input id="Name" type="text" size="15" maxlength="15" required>
+    <br><br>
+    <label for="Last name">Last name:</label>
+    <input id="Name" type="text" size="15" maxlength="15" required>
+    <br><br>
+    <label for="mail">E-mail:</label>
+    <input type="email" name="email" id="mail" size="15">
+    <br><br>
+    <input type="radio" name="spol" id="Male" value="Male">
+    <label for="Male">Male</label> <br>
+    <input type="radio" name="spol" id="Female" value="Female">
+    <label for="Female">Female</label> <br>
+    <br><br>
+    <input type="submit" value="Submit">    
+    <input type="reset" value="Reset">
+</p>
+</form>
+<br>
+<h3>Ugradnja videozapisa</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tlnzq3xNPHk?si=DUq803nY_LlOEJRe" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen></iframe>
+</body>
 </html>   
