@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="magdalena_borko">
+    <meta name="Opis" content="Izlet">
+    <title>Izlet</title>
+</head>
+<body>
+    <p>
+        <h2>Izlet na Plitvička jezera</h2>
+    </p>
+    <hr>
+    <table border="1">
+        <caption>Raspored polazaka</caption>
+        <tr>
+            <th colspan="2">Studeni 2023.</th>
+        </tr>
+        <tr>
+            <th>Datum</th>
+            <th>Vrijeme</th>
+        </tr>
+        <tr>
+            <td>10.11.2023.</td>
+            <td rowspan="3">09:00h</td>
+        </tr>
+        <tr>
+            <td>11.11.2023.</td>
+        </tr>
+        <tr>
+            <td>12.11.2023.</td>
+        </tr>
+        <tr>
+            <td rowspan="2">13.11.2023.</td>
+            <td>10:00h</td>
+        </tr>
+        <tr>
+            <td>12:00h</td>
+        </tr>
+        </table>
+        <br>
+        <hr>
+    <p>
+        <label for="Ime">Ime i prezime:</label>
+        <input id="Ime" type="text" size="15" maxlength="15" required>
+        <br>
+        <br>
+        <label for="pass">Vaša lozinka:</label>
+        <input type="password" name="password" id="pass" size="15" required> 
+        <br><br>
+    </p>
+    <p>Način prijave</p>
+    <input type="radio" name="prijava" id="admin" value="admin">
+    <label for="admin">Admin</label> <br>
+    <input type="radio" name="prijava" id="guest" value="guest">
+    <label for="guest">Guest</label> 
+
+    <p>Prihvaćate li uvjete?</p>
+        <input type="checkbox" name="language" id="da">
+        <label for="da">Prihvaćam</label>
+    <p>
+        <input type="submit" value="Pošalji">    
+        <input type="reset" value="Poništi">  
+    </p>
+    <hr>
+<p>
+    <h4>Videozapis Plitvičkih jezera</h4> 
+    <video src="Nacional Park Plitvicka Jezera - Plitvice Lakes National Park - Croatia.mp4" controls width="370" height="240"></video>
+</p>
+<h4>Audiozapis</h4>
+<audio src="cardinal-37075.ogg" controls></audio>
+</body>
+</html>
