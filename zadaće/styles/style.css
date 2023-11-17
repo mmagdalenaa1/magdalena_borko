@@ -1,0 +1,39 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: #4CAF50;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    background-color: #ECEFF1;
+}
+.a{
+    list-style-type: circle;
+    font-size: 16px;
+    color: #37474F;
+}
+.b{
+    list-style-type: square;
+    font-size: 18px;
+    color: #546E7A;
+}
+.c{
+    list-style-type: upper-roman;
+    font-size: 20px;
+    color: #78909C;
+}
+.d{
+    list-style-type: lower-alpha;
+}
+.highlight{
+    color: #FFC107;
+}
