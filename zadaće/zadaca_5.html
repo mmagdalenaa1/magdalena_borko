@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="autor" content="magdalena_borko">
     <meta name="opis" content="recepti">
     <title>Recepti</title>
@@ -34,7 +36,24 @@
             background-color: white;
             grid-column: span 4;
             grid-row: span 7;
-        }
+        }    
+        @media (max-width: 480px) { 
+            body{
+                background-color:rgb(234, 162, 204)
+            }
+            .one {
+                grid-row: span 12;
+                grid-column: span 12;
+            }
+            .two { 
+                grid-row: span 12;
+                grid-column: span 12;
+            }
+            .three{ 
+                grid-row: span 12;
+                grid-column: span 12;
+            }
+            }
     </style>
 </head>
 <body>
